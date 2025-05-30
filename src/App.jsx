@@ -1,7 +1,10 @@
+import React from "react";
+import ToDo from "./components/ToDo";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="bg-gray-600 text-white">ToDo</h1>
+    <div className="bg-stone-900  grid py-4 min-h-screen">
+      <ToDo />
     </div>
   );
 };
