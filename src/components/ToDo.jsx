@@ -3,7 +3,11 @@ import todo_icon from "../assets/todo_icon.svg";
 import ToDoItems from "./ToDoItems";
 
 const ToDo = () => {
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState(
+    localStorage.getItem("todos")
+      ? JSON.parse(localStorage.getItem("todos"))
+      : []
+  );
 
   const inputRef = useRef();
   const add = () => {
@@ -41,7 +45,7 @@ const ToDo = () => {
   };
 
   useEffect(() => {
-    console.log(todoList);
+    localStorage.setItem("todos", JSON.stringify(todoList));
   }, [todoList]);
 
   return (
