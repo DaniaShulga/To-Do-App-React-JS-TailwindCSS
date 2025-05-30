@@ -1,0 +1,14 @@
+Setup React Project
+
+1) в терминале пишет команду чтобы установить "Vite"- npm create vite@latest
+ - Project name: . - просто точка, она позволит назвать проект так как называется корневая папка
+ - Select a framework: React
+ - Select a variant: JavaScript - в данном случае выбераем его
+2) npm install - для того чтобы создать dependencies(залежності)/или же просто устанавливаем папку "node_modules"
+3) npm run dev - для того чтобы запустить проект
+4) Чистка проекта:
+ - App.css
+ - index.css - чистим файл
+ - App.jsx - чистим файл и прописываем команду - "rafce"
+ - index.html - меняем title на название проекта
+ - src/assets - удаляем "svg"
